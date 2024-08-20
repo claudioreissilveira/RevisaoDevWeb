@@ -1,3 +1,30 @@
+/*
+npm init -y
+npm i typescript -D
+npm i @inquirer/prompts
+npx tsc --init
+-------------------------------
+Alterações de código: (tsconfig.json)
+--/Modules/
+"module":"commonjs",
+"rootDir": "./src",
+
+--Emit (linha7)
+"outDir": "./dist", 
+
+Tirar dos comentários os comandos:
+"noImplicitAny": true,                           
+"strictNullChecks": true,                      
+"strictFunctionTypes": true,
+------------------------------
+(criar os folders: src e dist)  
+(dentro de src criar file: index.ts)
+npx tsc (conferir se a pasta "index.js" foi criada em "dist")
+node ./dist/index.js
+*/
+
+
+
 import { input } from "@inquirer/prompts";
 
 // Função assíncrona autoexecutável para rodar o código
